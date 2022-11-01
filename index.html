@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>web frontend portfolio-마승은</title>
+  <meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/swiper.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/cursor.js"></script>
+  <style>
+  </style>
+</head>
+<body>
+  <div class="cursorItem">
+    <span class="circle"></span>
+  </div>
+
+  <header class="header">
+    <div class="ver">ver 1.0.0</div>
+    <div class="gnb">
+      <div class="gnb-btn btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="gnb-nav">
+        <ul>
+          <li><a href="#home" >Home</a></li>
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#portfolio">PortFolio</a></li>
+          <li><a href="#myskill">My Skill</a></li>
+          <li><a href="#mytool">My Tool</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" id="home">
+        <h1 class="home title">
+          안녕하세요<br>
+          프론트엔드 개발자<br>
+          마승은입니다.
+        </h1>
+        <div class="home-img">
+          <img src="./img/home-img.png" alt="home img">
+          <div class="btn-wrap">
+            <a href="#" class="resume btn">
+              <span class="material-symbols-outlined">file_download</span>
+              <span class="text">이력서.pdf</span>
+            </a>
+            <a href="https://github.com/moomin94" class="github btn">
+            </a>
+          </div>
+        </div>
+        <span class="material-symbols-outlined mouse">mouse</span>
+      </div>
+      <div class="swiper-slide" id="profile">Profile</div>
+      <div class="swiper-slide" id="portfolio">
+        <div class="swiper mySwiper2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide first">
+              <div class="img-wrap">
+                <img src="./img/portfolio-img-1.png" alt="portfolio thumbnail">
+              </div>
+            </div>
+            <div class="swiper-slide second">
+              <div class="img-wrap">
+                <img src="./img/portfolio-img-2.png" alt="portfolio thumbnail">
+              </div>
+            </div>
+            <div class="swiper-slide third">
+              <div class="img-wrap">
+                <img src="./img/portfolio-img-3.png" alt="portfolio thumbnail">
+              </div>
+            </div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="swiper-slide" id="myskill">My Skill</div>
+      <div class="swiper-slide" id="mytool">My tool</div>
+      <div class="swiper-slide" id="contact">Contact</div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      speed: 800,
+      direction: "vertical",
+      mousewheel: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+
+    var swiper2 = new Swiper(".mySwiper2", {
+      slidesPerView: 3,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+</html>

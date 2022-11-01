@@ -1,0 +1,227 @@
+@charset "UTF-8";
+html{overflow: hidden;}
+html, body{width: 100%; height: 100%;}
+*{margin:0; padding:0;}
+
+@keyframes mousemove {
+  0% {
+    transform : translateY(0px); /* 애니메이션이 0%만큼 동작시 */
+  }
+  30% {
+    transform : translateY(-20px); /* 애니메이션이 50%만큼 동작시 */
+  }
+  100% {
+    transform : translateY(5px); /* 애니메이션이 100%만큼 동작시 */
+  }
+}
+
+body {
+  background: linear-gradient(#6C4AB6, #8D72E1, #8D9EFF, #B9E0FF);
+}
+
+/* 공통부분 */
+.title {
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+/* 공통부분 끝 */  
+
+.cursorItem {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  pointer-events: none;
+  mix-blend-mode: multiply;
+  opacity: .5;
+}
+
+.cursorItem .circle {
+  position: fixed;
+  display: block;
+  width: 120px;
+  height: 120px;
+  margin: -60px 0 0 -60px;
+  background: #a300a8;
+  border-radius: 50%;
+  transition: all .2s ease-in-out;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 50px;
+  height: 85px;
+  /* background-color: rgba(255,255,255,0.5); */
+  z-index: 500;
+}
+
+.header .ver {
+  color: white;
+  letter-spacing: 0.5px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header .gnb {
+  position: relative;
+  width: 32px;
+}
+
+.header .gnb-btn {
+  width: 32px;
+  height: 32px;
+}
+
+.header .gnb-btn span {
+  position: absolute;
+  top: 10px;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 1.6px;
+  background-color: white;
+}
+
+.header .gnb-btn span:nth-child(1){
+  top: 0px;
+}
+
+.header .gnb-btn span:nth-child(3){
+  top: 20px;
+}
+
+.header .gnb-nav {
+  display: none;
+}
+
+.swiper-slide#home {
+  flex-wrap: nowrap;
+}
+
+.swiper-slide#home .title {
+  width: 40%;
+  font-size: 80px;
+  letter-spacing: -8px;
+}
+
+.swiper-slide#home .home-img {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide#home .home-img > img {
+  max-width: 320px;
+  margin-bottom: 20px;
+}
+
+.swiper-slide#home .home-img .btn-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-slide#home .home-img .btn-wrap a { 
+  width: 48%;
+  height: 50px;
+  max-width: 150px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1%;
+  transition: .3s;
+}
+
+.swiper-slide#home .home-img .btn-wrap a span { 
+  font-weight: 600;
+  color: #333333;
+  transition: .3s;
+}
+
+.swiper-slide#home .home-img .btn-wrap a.github {
+  background: url('../img/github-img.png') no-repeat center / contain;
+  background-color: white;
+}
+
+.swiper-slide#home .home-img .btn-wrap a:hover { 
+  background-color: #6C4AB6;
+}
+
+.swiper-slide#home .home-img .btn-wrap a.resume:hover span {
+  color: white;
+}
+
+.swiper-slide#home .home-img .btn-wrap a.github:hover {
+  background: url('../img/github-img-white.png') no-repeat center / contain;
+  background-color: #6C4AB6;
+}
+
+.swiper-slide#home .mouse {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ffffff;
+  font-size: 50px;
+  animation-name: mousemove;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+  animation-timing-function : linear;
+}
+
+.swiper-slide#portfolio .swiper-slide .img-wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: .3s;
+  overflow: hidden;
+}
+
+.swiper-slide#portfolio .swiper-slide.first .img-wrap {
+  background-color: #17b464;
+}
+
+.swiper-slide#portfolio .swiper-slide.second .img-wrap {
+  background-color: #e07351;
+}
+
+.swiper-slide#portfolio .swiper-slide.third .img-wrap {
+  background-color: #8cc3ea;
+}
+
+/* .swiper-slide#portfolio .swiper-slide .img-wrap::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.6);
+  transition: .5s;
+}
+
+.swiper-slide#portfolio .swiper-slide .img-wrap:hover::after {
+  background-color: rgba(0,0,0,0);
+} */
+
+.swiper-slide#portfolio .swiper-slide .img-wrap img {
+  transition: .3s;
+}
+
+.swiper-slide#portfolio .swiper-slide .img-wrap:hover img {
+  transform: scale(1.1);
+}
+
+
+
+
