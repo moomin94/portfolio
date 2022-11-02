@@ -11,7 +11,6 @@
   <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon_io/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon_io/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon_io/favicon-16x16.png">
-  <link rel="manifest" href="./img/favicon_io/site.webmanifest">
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
@@ -33,23 +32,20 @@
 
   <header class="header">
     <div class="ver">ver 1.0.0</div>
-    <div class="gnb">
-      <div class="gnb-btn btn">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <nav class="gnb-nav">
-        <ul>
-          <li><a href="#home" >Home</a></li>
-          <li><a href="#profile">Profile</a></li>
-          <li><a href="#portfolio">PortFolio</a></li>
-          <li><a href="#myskill">My Skill</a></li>
-          <li><a href="#mytool">My Tool</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+    <div class="gnb-btn btn">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
+    <nav class="gnb-nav">
+      <ul>
+        <li class="btn"><a href="#home" data-id="0">Home</a></li>
+        <li class="btn"><a href="#profile" data-id="1">Profile</a></li>
+        <li class="btn"><a href="#myskill" data-id="2">My Skill</a></li>
+        <li class="btn"><a href="#portfolio" data-id="3">PortFolio</a></li>
+        <li class="btn"><a href="#contact" data-id="4">Contact</a></li>
+      </ul>
+    </nav>
   </header>
   <!-- Swiper -->
   <div class="swiper mySwiper">
@@ -84,43 +80,39 @@
       <div class="swiper-slide" id="myskill">
         <div class="inner">
           <h3>My Skill</h3>
-          <div class="top">
-            <ul>
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li>jQuery</li>
-              <li>Javascript</li>
-              <li>SASS</li>
-              <li>vue</li>
-              <li>Photoshop</li>
-              <li>Illustrator</li>
-            </ul>
-          </div>
           <div class="cont-wrap">
             <ul>
-              <li>
-                <span>HTML5/CSS3</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt aspernatur libero vitae alias error veritatis nesciunt, dignissimos magnam. Adipisci ut inventore pariatur beatae?</p>
+              <li class="btn">
+                <span>HTML5</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt aspernatur libero vitae alias error veritatis</p>
               </li>
-              <li>
+              <li class="btn">
+                <span>CSS3</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt aspernatur libero vitae alias error veritatis</p>
+              </li>
+              <li class="btn">
                 <span>jQuery</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt aspernatur libero vitae alias error veritatis nesciunt, dignissimos magnam. Adipisci ut inventore pariatur beatae?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt aspernatur libero vitae alias error veritatis</p>
               </li>
-              <li>
+              <li class="btn">
                 <span>Javascript</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt aspernatur libero vitae alias error veritatis nesciunt, dignissimos magnam. Adipisci ut inventore pariatur beatae?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt aspernatur libero vitae alias error veritatis</p>
               </li>
-              <li>
+              <li class="btn">
                 <span>SASS</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt aspernatur libero vitae alias error veritatis nesciunt, dignissimos magnam. Adipisci ut inventore pariatur beatae?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt aspernatur libero vitae alias error veritatis</p>
               </li>
-              <li>
+              <li class="btn">
                 <span>vue</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt aspernatur libero vitae alias error veritatis nesciunt, dignissimos magnam. Adipisci ut inventore pariatur beatae?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt aspernatur libero vitae alias error veritatis</p>
               </li>
-              <li>
+              <li class="btn">
                 <span>Photoshop</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt aspernatur libero vitae alias error veritatis nesciunt, dignissimos magnam. Adipisci ut inventore pariatur beatae?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt aspernatur libero vitae alias error veritatis</p>
+              </li>
+              <li class="btn">
+                <span>Illustrator</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt aspernatur libero vitae alias error veritatis</p>
               </li>
             </ul>
           </div>
@@ -166,7 +158,11 @@
           <div class="swiper-pagination"></div>
         </div>
       </div>
-      <div class="swiper-slide" id="contact">Contact</div>
+      <div class="swiper-slide" id="contact">
+        <div class="inner">
+          <h3>Contact</h3>
+        </div>
+      </div>
     </div>
     <div class="swiper-pagination"></div>
   </div>
