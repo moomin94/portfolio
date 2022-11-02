@@ -27,6 +27,8 @@
   margin: 20px 0;
   width: 10px;
   height: 10px;
+  z-index: 9999;
+  position: relative;
 }
 
 .swiper-vertical>.swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
@@ -41,4 +43,10 @@
   height: 100%;
   object-fit: cover;
   object-position: center center;
+}
+
+.mySwiper2 .swiper-pagination-bullet-active {
+  width: 25px;
+  border-radius: 5px;
+  background-color: #111111;
 }
