@@ -32,7 +32,7 @@
 }
 
 .swiper-vertical>.swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background-color: #025;
+  background-color: var(--point-color);
   width: 13px;
   height: 13px;
   margin-left: -1px;
