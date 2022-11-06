@@ -1,4 +1,10 @@
 @charset "UTF-8";
+@font-face {
+  font-family: 'HallymGothic-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2204@1.0/HallymGothic-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
 html{overflow: hidden;}
 html, body{width: 100%; height: 100%;}
 *{margin:0; padding:0;}
@@ -24,6 +30,7 @@ body {
   /* background: linear-gradient(#1C3879, #607EAA); */
   /* background: #47B5FF; */
   background: var(--main-color);
+  font-family: 'HallymGothic-Regular';
 }
 
 /* 공통부분 */
@@ -282,6 +289,7 @@ body {
 }
 
 .swiper-slide#profile .inner .left h4 {
+  font-family: 'HallymGothic-Regular';
   font-size: 22px;
   letter-spacing: -2px;
   font-weight: normal;
@@ -374,6 +382,7 @@ body {
 }
 
 .swiper-slide#myskill .inner .cont-wrap ul li p {
+  font-family: 'HallymGothic-Regular';
   color: #ffffff;
   text-shadow: 1px 1px 3px var(--point-color);
   line-height: 1.4;

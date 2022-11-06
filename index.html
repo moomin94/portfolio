@@ -145,11 +145,27 @@
               </div>
               <div class="text-wrap">
                 <h3>CJ 올리브 네트웍스 홈페이지</h3>
-                <p>PC DESIGN/CODING</p>
+                <p>PC CLONE CODING</p>
               </div>
             </div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide fourth">
+              <div class="img-wrap">
+                <img class="btn" src="./img/portfolio-img-4.png" alt="portfolio thumbnail">
+              </div>
+              <div class="text-wrap">
+                <h3>세븐나이츠 레볼루션 홈페이지</h3>
+                <p>PC CLONE CODING</p>
+              </div>
+            </div>
+            <div class="swiper-slide fifth">
+              <div class="img-wrap">
+                <img class="btn" src="./img/portfolio-img-5.png" alt="portfolio thumbnail">
+              </div>
+              <div class="text-wrap">
+                <h3>카페24 홈페이지</h3>
+                <p>PC RENEWAL</p>
+              </div>
+            </div>
             <div class="swiper-slide">Slide 6</div>
             <div class="swiper-slide">Slide 7</div>
             <div class="swiper-slide">Slide 8</div>
@@ -180,6 +196,23 @@
         el: ".swiper-pagination",
         clickable: true,
       },
+      on: {
+        slideChange: function () {
+          if(this.realIndex == 2){
+            for(let i = 1; i < 9; i++){
+              setTimeout(function(){
+                $(`.cont-wrap ul li:nth-child(${i})`).addClass('on');
+              },50*i);
+            }
+          }else{
+            for(let i = 8; i > 0; i--){
+              setTimeout(function(){
+                $(`.cont-wrap ul li:nth-child(${i})`).removeClass('on');
+              },50*i);
+            }
+          }
+        }
+      }
     });
 
     var swiper2 = new Swiper(".mySwiper2", {
