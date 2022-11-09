@@ -1,5 +1,6 @@
 
 let btn;
+let imgWrap;
 let cursorItem;
 let circle;
 let x = 0, y = 0;
@@ -7,11 +8,21 @@ let mx = 0, my = 0;
 
 document.addEventListener("DOMContentLoaded", function () {
     btn = document.querySelectorAll('.btn');
+    imgWrap = document.querySelectorAll('.img-wrap');
     cursorItem = document.querySelector(".cursorItem");
     circle = cursorItem.querySelector(".circle");
 
-    btn.forEach(function (item) {
-        item.addEventListener("mouseover", function (e) {
+    imgWrap.forEach(function(item){
+        item.addEventListener("mouseover", function(e){
+            circle.style.transform = "scale(.3)";
+        });
+        item.addEventListener("mouseout", function(e){
+            circle.style.transform = "scale(1)";
+        });
+    });
+
+    btn.forEach(function(item){
+        item.addEventListener("mouseover", function(e){
             circle.style.transform = "scale(.3)";
         });
         item.addEventListener("mouseout", function (e) {
