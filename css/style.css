@@ -1,21 +1,39 @@
 @charset "UTF-8";
-html{overflow: hidden;}
-html, body{width: 100%; height: 100%;}
-*{margin:0; padding:0;}
+
+html {
+  overflow: hidden;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 :root {
-  --main-color : #151515;
-  --point-color : #0088ff;
+  --main-color: #151515;
+  --point-color: #0088ff;
 }
 
 @keyframes mousemove {
   0% {
-    transform : translateY(0px); /* 애니메이션이 0%만큼 동작시 */
+    transform: translateY(0px);
+    /* 애니메이션이 0%만큼 동작시 */
   }
+
   30% {
-    transform : translateY(-20px); /* 애니메이션이 50%만큼 동작시 */
+    transform: translateY(-20px);
+    /* 애니메이션이 50%만큼 동작시 */
   }
+
   100% {
-    transform : translateY(5px); /* 애니메이션이 100%만큼 동작시 */
+    transform: translateY(5px);
+    /* 애니메이션이 100%만큼 동작시 */
   }
 }
 
@@ -68,7 +86,7 @@ body {
 }
 
 
-/* 공통부분 끝 */  
+/* 공통부분 끝 */
 
 .cursorItem {
   position: absolute;
@@ -125,11 +143,11 @@ body {
   background-color: white;
 }
 
-.header .gnb-btn span:nth-child(1){
+.header .gnb-btn span:nth-child(1) {
   top: 0px;
 }
 
-.header .gnb-btn span:nth-child(3){
+.header .gnb-btn span:nth-child(3) {
   top: 20px;
 }
 
@@ -139,7 +157,7 @@ body {
   left: 0;
   width: 100%;
   height: 85px;
-  background-color: rgba(255,255,255,1);
+  background-color: rgba(255, 255, 255, 1);
   transform: translateY(-85px);
   opacity: 0;
   transition: .5s;
@@ -216,7 +234,7 @@ body {
   justify-content: center;
 }
 
-.swiper-slide#home .btn-wrap a { 
+.swiper-slide#home .btn-wrap a {
   width: 48%;
   height: 50px;
   max-width: 150px;
@@ -229,7 +247,7 @@ body {
   transition: .3s;
 }
 
-.swiper-slide#home .btn-wrap a span { 
+.swiper-slide#home .btn-wrap a span {
   font-weight: 600;
   color: #333333;
   transition: .3s;
@@ -240,7 +258,7 @@ body {
   background-color: white;
 }
 
-.swiper-slide#home .btn-wrap a:hover { 
+.swiper-slide#home .btn-wrap a:hover {
   background-color: var(--point-color);
 }
 
@@ -262,7 +280,7 @@ body {
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-fill-mode: backwards;
-  animation-timing-function : linear;
+  animation-timing-function: linear;
 }
 
 .swiper-slide#profile .inner {
@@ -426,7 +444,7 @@ body {
   background-color: white;
 }
 
-.swiper-slide#portfolio .swiper-slide > a {
+.swiper-slide#portfolio .swiper-slide>a {
   display: inline-block;
   width: 100%;
   height: 100%;
@@ -466,7 +484,7 @@ body {
   font-size: 24px;
   font-family: 'NanumSquareNeoBold';
   color: #151515;
-  white-space:pre;
+  white-space: pre;
   text-align: center;
   line-height: 1.5;
   transition: .5s;
@@ -495,7 +513,7 @@ body {
 }
 
 .swiper-slide#portfolio .swiper-slide .img-wrap:hover::after {
-  background-color: rgba(255,255,255,0.6);
+  background-color: rgba(255, 255, 255, 0.6);
   opacity: 1;
 }
 
@@ -516,7 +534,7 @@ body {
 .swiper-slide#portfolio .swiper-slide .text-wrap h3,
 .swiper-slide#portfolio .swiper-slide .text-wrap p {
   color: white;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .swiper-slide#portfolio .swiper-slide .text-wrap h3 {
@@ -576,7 +594,7 @@ body {
 }
 
 .swiper-slide#contact .inner .contact-list li:nth-child(1):hover .img {
-  background: url('../img/contact-github-b.png') no-repeat center / contain;;
+  background: url('../img/contact-github-b.png') no-repeat center / contain;
 }
 
 .swiper-slide#contact .inner .contact-list li:nth-child(2) .img {
@@ -584,7 +602,7 @@ body {
 }
 
 .swiper-slide#contact .inner .contact-list li:nth-child(2):hover .img {
-  background: url('../img/contact-email-b.png') no-repeat center / contain;;
+  background: url('../img/contact-email-b.png') no-repeat center / contain;
 }
 
 .swiper-slide#contact .inner .contact-list li:nth-child(3) .img {
@@ -592,7 +610,7 @@ body {
 }
 
 .swiper-slide#contact .inner .contact-list li:nth-child(3):hover .img {
-  background: url('../img/contact-phone-b.png') no-repeat center / contain;;
+  background: url('../img/contact-phone-b.png') no-repeat center / contain;
 }
 
 .swiper-slide#contact .inner .contact-list li h5 {
@@ -614,7 +632,7 @@ body {
   color: var(--point-color);
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) {
   .inner {
     width: 80%;
   }
@@ -630,7 +648,7 @@ body {
   .swiper-slide#contact .inner .contact-list li h5 {
     font-size: 18px;
   }
-  
+
   .swiper-slide#contact .inner .contact-list li p {
     font-size: 13px;
   }
@@ -644,7 +662,7 @@ body {
   .mySwiper2 .swiper-pagination-bullet {
     background-color: #000000;
   }
-  
+
   .swiper-slide#portfolio .swiper-slide .img-wrap::after {
     top: initial;
     left: 0;
@@ -656,10 +674,10 @@ body {
     text-align: left;
     transition: .5s;
     opacity: 1;
-    background-color: rgba(255,255,255,0.6);
+    background-color: rgba(255, 255, 255, 0.6);
     letter-spacing: -0.05em;
   }
-  
+
   .swiper-slide#portfolio .swiper-slide .img-wrap:hover img {
     transform: scale(1);
   }
@@ -671,7 +689,7 @@ body {
   .swiper-slide#portfolio .swiper-slide .text-wrap h3,
   .swiper-slide#portfolio .swiper-slide .text-wrap p {
     color: #151515;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0);
   }
 
   .swiper-slide#portfolio .swiper-slide .text-wrap p {
@@ -679,7 +697,7 @@ body {
   }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .inner {
     width: 90%;
   }
@@ -689,11 +707,12 @@ body {
     padding: 20px 25px;
   }
 
-  .swiper-pagination-vertical.swiper-pagination-bullets, .swiper-vertical>.swiper-pagination-bullets {
+  .swiper-pagination-vertical.swiper-pagination-bullets,
+  .swiper-vertical>.swiper-pagination-bullets {
     margin-top: -25px;
     right: 2vw;
   }
-  
+
 
   .swiper-slide#home .title {
     width: 80%;
@@ -718,33 +737,33 @@ body {
     align-items: center;
     margin-left: -20px;
   }
-  
-  .swiper-slide#home .btn-wrap a { 
+
+  .swiper-slide#home .btn-wrap a {
     width: 80%;
     height: 40px;
     max-width: 80%;
     margin: 0 0 15px 0;
   }
-  
-  .swiper-slide#home .btn-wrap a span { 
+
+  .swiper-slide#home .btn-wrap a span {
     font-weight: 600;
     color: #333333;
     transition: .3s;
   }
 
-  .swiper-slide#home .btn-wrap a:hover { 
+  .swiper-slide#home .btn-wrap a:hover {
     background-color: #ffffff;
   }
-  
+
   .swiper-slide#home .btn-wrap a.resume:hover span {
     color: #333333;
   }
-  
+
   .swiper-slide#home .btn-wrap a.github:hover {
     background: url('../img/github-img.png') no-repeat center / contain;
     background-color: #ffffff;
   }
-  
+
   .swiper-slide#profile .inner {
     width: 80%;
     height: 70%;
@@ -758,7 +777,7 @@ body {
   .swiper-slide#profile .inner h3 {
     margin-top: -60px;
   }
-  
+
   .swiper-slide#profile .inner .left,
   .swiper-slide#profile .inner .right {
     width: 90%;
@@ -768,11 +787,11 @@ body {
     border-right: 0;
     border-bottom: 1px solid #eeeeee;
   }
-  
+
   .swiper-slide#profile .inner h4 {
     font-size: 22px;
   }
-  
+
   .swiper-slide#profile .inner .right {
     padding: 25px;
   }
@@ -780,10 +799,11 @@ body {
   .swiper-slide#myskill .inner {
     width: 80%;
   }
+
   .swiper-slide#myskill .inner .cont-wrap ul {
     flex-direction: column;
   }
-  
+
   .swiper-slide#myskill .inner .cont-wrap ul li {
     position: relative;
     width: 100%;
@@ -808,11 +828,11 @@ body {
     box-sizing: border-box;
     color: #ffffff;
   }
-  
+
   .swiper-slide#myskill .inner .cont-wrap ul li.active::before {
     padding: 5px 5px 0 0;
   }
-  
+
 
   .swiper-slide#myskill .inner .cont-wrap ul li span {
     padding: 4px 6px;
@@ -820,7 +840,7 @@ body {
     font-size: 14px;
     font-weight: 600;
   }
-  
+
   .swiper-slide#myskill .inner .cont-wrap ul li p {
     display: none;
   }
@@ -828,19 +848,19 @@ body {
   .swiper-slide#myskill .inner .cont-wrap ul li:hover {
     background-color: none;
   }
-  
+
   .swiper-slide#myskill .inner .cont-wrap ul li::after {
     display: none;
   }
 
   .swiper-slide#portfolio .swiper-slide .img-wrap::after {
-    font-size: 18px;  
+    font-size: 18px;
   }
 
   .swiper-slide#portfolio .swiper-slide .text-wrap h3 {
     font-size: 24px;
   }
-  
+
   .swiper-slide#portfolio .swiper-slide .text-wrap p {
     font-size: 18px;
   }
@@ -860,23 +880,11 @@ body {
   .swiper-slide#contact .inner .contact-list li h5 {
     font-size: 20px;
   }
-  
+
   .swiper-slide#contact .inner .contact-list li p {
     font-size: 16px;
   }
-  
-  .swiper-slide#contact .inner .contact-list li:nth-child(1):hover .img {
-    background: url('../img/contact-github-w.png') no-repeat center / contain;;
-  }
 
-  .swiper-slide#contact .inner .contact-list li:nth-child(2):hover .img {
-    background: url('../img/contact-email-w.png') no-repeat center / contain;;
-  }
-
-  .swiper-slide#contact .inner .contact-list li:nth-child(3):hover .img {
-    background: url('../img/contact-phone-w.png') no-repeat center / contain;;
-  }
-  
   .swiper-slide#contact .inner .contact-list li:hover h5,
   .swiper-slide#contact .inner .contact-list li:hover p {
     color: #ffffff;
