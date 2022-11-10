@@ -318,6 +318,10 @@ body {
   border-right: 1px solid #eeeeee;
 }
 
+.swiper-slide#myskill .inner {
+  margin-top: 20px;
+}
+
 .swiper-slide#profile .inner h3::before {
   content: 'About Me';
 }
@@ -330,7 +334,7 @@ body {
   position: relative;
   width: 100%;
   height: auto;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 .swiper-slide#myskill .inner .cont-wrap ul {
@@ -807,7 +811,7 @@ body {
   .swiper-slide#myskill .inner .cont-wrap ul li {
     position: relative;
     width: 100%;
-    padding: 20px 10px 10px;
+    padding: 15px 10px 5px;
     margin-bottom: 25px;
     border-radius: 5px;
   }
@@ -827,10 +831,11 @@ body {
     text-align: right;
     box-sizing: border-box;
     color: #ffffff;
+    font-size: 14px;
   }
 
   .swiper-slide#myskill .inner .cont-wrap ul li.active::before {
-    padding: 5px 5px 0 0;
+    padding: 3px 5px 0 0;
   }
 
 
