@@ -283,59 +283,8 @@ body {
   animation-timing-function: linear;
 }
 
-.swiper-slide#profile .inner {
-  background-color: #ffffff;
-  border-radius: 20px;
-}
-
-.swiper-slide#profile .inner h3 {
-  margin-top: -60px;
-}
-
-.swiper-slide#profile .inner p {
-  margin-top: 20px;
-  line-height: 1.4;
-  font-size: 18px;
-}
-
-.swiper-slide#profile .inner .left {
-  width: 50%;
-  height: 600px;
-  padding: 30px 25px;
-  margin: 20px 0;
-  text-align: center;
-  border-right: 1px solid #eeeeee;
-  overflow: hidden;
-}
-
-.swiper-slide#profile .inner h4 {
-  font-family: 'NanumSquareNeo';
-  font-size: 22px;
-  letter-spacing: -2px;
-  font-weight: normal;
-  color: #333333;
-}
-
-.swiper-slide#profile .inner .right {
-  width: 50%;
-  height: 600px;
-  padding: 30px 25px;
-  margin: 20px 0;
-  text-align: center;
-  border-right: 1px solid #eeeeee;
-  overflow: hidden;
-}
-
-.swiper-slide#profile .inner .right p + h4 {
-  margin-top: 30px;
-}
-
 .swiper-slide#myskill .inner {
   margin-top: 20px;
-}
-
-.swiper-slide#profile .inner h3::before {
-  content: 'About Me';
 }
 
 .swiper-slide#myskill .inner h3::before {
@@ -778,38 +727,6 @@ body {
   .swiper-slide#home .btn-wrap a.github:hover {
     background: url('../img/github-img.png') no-repeat center / contain;
     background-color: #ffffff;
-  }
-
-  .swiper-slide#profile .inner {
-    width: 80%;
-    height: 70%;
-    margin-left: -15px;
-    margin-bottom: -50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .swiper-slide#profile .inner h3 {
-    margin-top: -60px;
-  }
-
-  .swiper-slide#profile .inner .left,
-  .swiper-slide#profile .inner .right {
-    width: 100%;
-    height: 50%;
-    padding: 20px;
-    margin: 0;
-    border-right: 0;
-  }
-  
-  .swiper-slide#profile .inner .left {
-    border-bottom: 1px solid #eeeeee;
-    margin-top: 20px;
-  }
-
-  .swiper-slide#profile .inner h4 {
-    font-size: 22px;
   }
 
   .swiper-slide#myskill .inner {
