@@ -474,6 +474,10 @@ body {
 }
 
 .swiper-slide#portfolio .swiper-slide.fifth .img-wrap::after {
+  content: '이화여자대학교 클로코딩\A소요기간: 2일 [개인 프로젝트]\A기술스택: HTML, SCSS, Vanila JS\A레이아웃: PC 고정형';
+}
+
+.swiper-slide#portfolio .swiper-slide.sixth .img-wrap::after {
   content: '카페24 리뉴얼\A소요기간: 5일 [교육기관 프로젝트]\A기술스택: HTML, CSS\A레이아웃: PC 고정형';
 }
 
