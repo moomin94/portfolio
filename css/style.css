@@ -462,7 +462,7 @@ body {
 }
 
 .swiper-slide#portfolio .swiper-slide.second .img-wrap::after {
-  content: '클럽클리오 클론코딩\A소요기간: 2주 [개인 프로젝트]\A기술스택: AHTML, SCSS, Vanila JS\A레이아웃: PC/모바일 반응형';
+  content: '클럽클리오 클론코딩\A소요기간: 2주 [개인 프로젝트]\A기술스택: HTML, SCSS, Vanila JS\A레이아웃: PC/모바일 반응형';
 }
 
 .swiper-slide#portfolio .swiper-slide.third .img-wrap::after {
