@@ -253,6 +253,11 @@ body {
   transition: .3s;
 }
 
+.swiper-slide#home .btn-wrap a span.text {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
 .swiper-slide#home .btn-wrap a.github {
   background: url('../img/github-img.png') no-repeat center / contain;
   background-color: white;
@@ -356,8 +361,8 @@ body {
 }
 
 .swiper-slide#myskill .inner .cont-wrap ul li.active:nth-child(3)::before {
-  content: '80%';
-  width: 80%;
+  content: '70%';
+  width: 70%;
 }
 
 .swiper-slide#myskill .inner .cont-wrap ul li.active:nth-child(4)::before {
@@ -371,8 +376,8 @@ body {
 }
 
 .swiper-slide#myskill .inner .cont-wrap ul li.active:nth-child(6)::before {
-  content: '0%';
-  width: 0;
+  content: '30%';
+  width: 30%;
 }
 
 .swiper-slide#myskill .inner .cont-wrap ul li.active:nth-child(7)::before {
