@@ -486,6 +486,10 @@ body {
   content: '카페24 리뉴얼\A소요기간: 5일 [교육기관 프로젝트]\A기술스택: HTML, CSS\A레이아웃: PC 고정형';
 }
 
+.swiper-slide#portfolio .swiper-slide.seventh .img-wrap::after {
+  content: '시디즈 리뉴얼\A소요기간: 5일 [교육기관 프로젝트]\A기술스택: HTML, SCSS, vanila JS\A레이아웃: PC 고정형';
+}
+
 .swiper-slide#portfolio .swiper-slide .img-wrap:hover::after {
   background-color: rgba(255, 255, 255, 0.6);
   opacity: 1;
