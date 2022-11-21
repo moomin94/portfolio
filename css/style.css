@@ -177,15 +177,17 @@ body {
 }
 
 .header .gnb-nav ul li {
-  margin: 0 3vw;
+  width: 25%;
+  text-align: center;
 }
 
 .header .gnb-nav ul li a {
   display: inline-block;
-  padding: 10px 20px;
+  width: 100%;
   font-size: 18px;
   font-weight: 500;
   color: var(--point-color);
+  white-space: nowrap;
 }
 
 .header .gnb-nav ul li a:hover {
