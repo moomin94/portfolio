@@ -353,8 +353,8 @@ body {
 }
 
 .swiper-slide#myskill .inner .cont-wrap ul li.active:nth-child(1)::before {
-  content: '90%';
-  width: 90%;
+  content: '80%';
+  width: 80%;
 }
 
 .swiper-slide#myskill .inner .cont-wrap ul li.active:nth-child(2)::before {
@@ -373,13 +373,13 @@ body {
 }
 
 .swiper-slide#myskill .inner .cont-wrap ul li.active:nth-child(5)::before {
-  content: '50%';
-  width: 50%;
+  content: '70%';
+  width: 70%;
 }
 
 .swiper-slide#myskill .inner .cont-wrap ul li.active:nth-child(6)::before {
-  content: '30%';
-  width: 30%;
+  content: '40%';
+  width: 40%;
 }
 
 .swiper-slide#myskill .inner .cont-wrap ul li.active:nth-child(7)::before {
@@ -388,8 +388,8 @@ body {
 }
 
 .swiper-slide#myskill .inner .cont-wrap ul li.active:nth-child(8)::before {
-  content: '70%';
-  width: 70%;
+  content: '60%';
+  width: 60%;
 }
 
 .swiper-slide#myskill .inner .cont-wrap ul li span {
