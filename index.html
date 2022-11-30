@@ -3,9 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta
-  name="viewport"
-  content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://moomin94.github.io/portfolio/">
   <meta property="og:title" content="Web Frontend Portfolio-마승은">
@@ -19,8 +18,9 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon_io/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon_io/favicon-16x16.png">
   <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
   <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-neo.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/reset.css">
@@ -55,7 +55,7 @@
             <span class="text">Profile</span>
             <span class="material-symbols-outlined">
               login
-              </span>
+            </span>
           </a>
           <a href="https://github.com/moomin94" class="github btn" target="_blank">
           </a>
@@ -153,6 +153,17 @@
                 </div>
               </a>
             </div>
+            <div class="swiper-slide ninth">
+              <a href="https://moomin94.github.io/movie-app/" target="_blank">
+                <div class="img-wrap">
+                  <img class="btn" src="./img/portfolio-img-9.png" alt="portfolio thumbnail">
+                </div>
+                <div class="text-wrap">
+                  <h3>영화 소개 홈페이지</h3>
+                  <p>PC/MOBILE CODING</p>
+                </div>
+              </a>
+            </div>
           </div>
           <div class="swiper-pagination"></div>
         </div>
@@ -245,23 +256,23 @@
       },
       on: {
         slideChange: function () {
-          if(this.realIndex == 2){
-            for(let i = 1; i < 9; i++){
-              setTimeout(function(){
+          if (this.realIndex == 2) {
+            for (let i = 1; i < 9; i++) {
+              setTimeout(function () {
                 $(`.cont-wrap ul li:nth-child(${i})`).addClass('on');
-              },50*i);
-              setTimeout(function(){
+              }, 50 * i);
+              setTimeout(function () {
                 $(`.cont-wrap ul li:nth-child(${i})`).addClass('active');
-              },100*i);
+              }, 100 * i);
             }
-          }else{
-            for(let i = 8; i > 0; i--){
-              setTimeout(function(){
+          } else {
+            for (let i = 8; i > 0; i--) {
+              setTimeout(function () {
                 $(`.cont-wrap ul li:nth-child(${i})`).removeClass('on');
-              },50*i);
-              setTimeout(function(){
+              }, 50 * i);
+              setTimeout(function () {
                 $(`.cont-wrap ul li:nth-child(${i})`).removeClass('active');
-              },100*i);
+              }, 100 * i);
             }
           }
         }

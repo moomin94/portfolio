@@ -496,6 +496,10 @@ body {
   content: 'Apple 홈페이지 클론코딩\A소요기간: 3일 [개인 프로젝트]\A기술스택: BOOTSTRAP, HTML, CSS, vanila JS\A레이아웃: PC/MOBILE 반응형';
 }
 
+.swiper-slide#portfolio .swiper-slide.ninth .img-wrap::after {
+  content: '영화소개 홈페이지 코딩\A소요기간: 1일 [개인 프로젝트]\A기술스택: React JS \A레이아웃: PC/MOBILE 반응형';
+}
+
 .swiper-slide#portfolio .swiper-slide .img-wrap:hover::after {
   background-color: rgba(255, 255, 255, 0.6);
   opacity: 1;
